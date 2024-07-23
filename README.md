@@ -98,10 +98,9 @@ Você também pode ver a lista de todos os [colaboradores](https://github.com/us
 
 ## 📚 Conteúdos
 
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
+* **Busca Aninhada** - [Vídeo Aula para saber sobre Busca Aninhada](https://youtu.be/H6D8EFSGml0?si=Sf5C5ZhfmhM65Dj1&t=141)
+* **Atributos** - [Vídeo Aula para saber sobre Busca Aninhada](https://youtu.be/H6D8EFSGml0?si=EsUyJ2CptxKlJwPa&t=1523)
+* **Navegação** - [Vídeo Aula para saber sobre Busca Aninhada](https://youtu.be/H6D8EFSGml0?si=cW5ksnVMSaA96Prc&t=2564)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
