@@ -9,7 +9,7 @@ Essas instruções permitirão que você obtenha uma cópia do projeto em opera�
 Consulte **[Implantação](#-implanta%C3%A7%C3%A3o)** para saber como implantar o projeto.
 Consulte **[Comandos Terminal](#-Comandos-Terminal)** para saber quais fora os comandos utilizados no terminal para funcionar o arquivo.
 Consulte **[Comandos Arquivo](#-Comandos-Selenium-Usados)** para saber quais funções utilizamos nesse projeto, ex: .get(), .click(), .find_element();
-Consulte **[Conteúdo Curso](#-Conteúdos)** para ver tudo que foi passado pelo curso, pelo professor Eduardo;
+Consulte **[Conteúdo Curso](#-Conteúdos-Vídeos)** para ver tudo que foi passado pelo curso, pelo professor Eduardo;
 
 ### 📋 Pré-requisitos
 
@@ -51,7 +51,21 @@ Dar exemplos
 
 ## 📦 Implantação
 
-Adicione notas adicionais sobre como implantar isso em um sistema ativo
+### Libs que utilizamos no projeto
+
+* `urlparse: from urllib.parse import urlparse` - serve
+* `Sleep: from time import sleep`
+* `Chrome(): from selenium.webdriver import Chrome`
+* `Firefox(): from selenium.webdriver import Firefox`
+* `expected_conditions / EC: from selenium.webdriver.support import expected_conditions as EC`
+* `WebDriverWait: from selenium.webdriver.support.ui import WebDriverWait`
+* `By: from selenium.webdriver.common.by import By`
+
+# Serve para poder usar o WebDriverWait
+
+
+
+
 
 ## 🐧 Comandos-Terminal
 
@@ -67,9 +81,14 @@ Aqui estão os comandos utilizados desde o início do projeto:
 
 Aqui estão os comandos mais importantes utilizados dentro do arquivo, algo como uma documentação para que você possa utilizá-los também;
 
-* `navegador.get(url)` - Utilizamos as variáveis: navegador = Chrome(); url = 'https://sociorei.com/', assim somos capazes de acessar a url que passamos entre os parênteses do .get() ;
-* `imagem.click()` - Usamos a variável: imagem = navegador.find_element_by_tag_name('img'), assim somos capazes de procurar um elemento pela sua tag "a, p, img, button, etc.";
-* `find_elements(By.TAG_NAME, "p")` - Com essa função, nós passamos qual o navegador que estamos utilizando no caso **Chrome().find_elements(By.TAG_NAME, "p")**, assim somos capazes de buscar uma lista de elementos pela tag específica que queremos, como p, a, img, section";
+* `imagem.click()` - Usamos a variável: imagem = navegador.find_elements(By.TAG_NAME, "img"), assim somos capazes de procurar um elemento pela sua tag "a, p, img, button, etc.";
+* `browser.find_elements(By.TAG_NAME, "p")` - Com essa função, nós passamos qual o navegador que estamos utilizando no caso **Chrome().find_elements(By.TAG_NAME, "p")**, assim somos capazes de buscar uma lista de elementos pela tag específica que queremos, como p, a, img, section";
+* `browser.get('sua_url_aqui')` - Usamos essa função para podermos entrar no site que colocarmos no local da **url**;
+* `browser.back()` - Volta para a page **anterior** (clica na flecha de voltar lá em cima do navegador);
+* `browser.forward()` - **Avança** para a página mais a frente caso você já tenha entrado nela com o .get() e depois dado .back();
+* `urlparse(browser.current_url)` - **Precisa-se importar uma lib** chamada **URLlib** para que possamos parsear uma url da maneira mostrada aqui! Outros comandos existentes para buscar sobre urlparse --->>>> `urlparse(browser.current_url).scheme`,`urlparse(browser.current_url).netloc`,`urlparse(browser.current_url).path`,`urlparse(browser.current_url).params`,`urlparse(browser.current_url).query`,`urlparse(browser.current_url).fragment`;
+* `browser.refresh()` - Dá um f5 na página, mas só dá uma continuidade à tabela de páginas acessadas, ai é como se vocÊ desse 2 gets para a página em que você deu refresh;
+
 
 ## 🛠️ Construído com
 
@@ -96,11 +115,12 @@ Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
-## 📚 Conteúdos
+## 📚 Conteúdos-Vídeos
 
-* **Busca Aninhada** - [Vídeo Aula para saber sobre Busca Aninhada](https://youtu.be/H6D8EFSGml0?si=Sf5C5ZhfmhM65Dj1&t=141)
-* **Atributos** - [Vídeo Aula para saber sobre Busca Aninhada](https://youtu.be/H6D8EFSGml0?si=EsUyJ2CptxKlJwPa&t=1523)
-* **Navegação** - [Vídeo Aula para saber sobre Busca Aninhada](https://youtu.be/H6D8EFSGml0?si=cW5ksnVMSaA96Prc&t=2564)
+* **Busca-Aninhada - Aula04** - [Vídeo Aula para saber sobre Busca Aninhada](https://youtu.be/H6D8EFSGml0?si=Sf5C5ZhfmhM65Dj1&t=141)
+* **Atributos -Aula04** - [Vídeo Aula para saber sobre Atributos](https://youtu.be/H6D8EFSGml0?si=EsUyJ2CptxKlJwPa&t=1523)
+* **Navegação -Aula04** - [Vídeo Aula para saber sobre Navegação](https://youtu.be/H6D8EFSGml0?si=cW5ksnVMSaA96Prc&t=2564)
+* **URLLib - Aula04** - [Vídeo Aula para saber sobre URLlib](https://youtu.be/H6D8EFSGml0?si=D4Jkm4XZhDNoHQrO&t=3992)
 
 Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
 
